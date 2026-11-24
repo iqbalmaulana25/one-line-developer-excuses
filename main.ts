@@ -3,7 +3,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const line =
-  "It worked on my machine — unfortunately, my machine retired on Friday and took the config with it.";
+  "It worked on my machine — which retired Friday and took the only copy of the config with it.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", line + "\n", "utf8");
